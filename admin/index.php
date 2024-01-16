@@ -8,8 +8,10 @@
 
     // this is code for (login dasboard chack). if admin login dashboard then go to (Dashboard);
     session_start();
-    $login_chack = $_SESSION['adminEmail'];
-    if($login_chack==true){
+    if(isset($_SESSION['adminEmail'])){
+        $login_chack = $_SESSION['adminEmail'];
+    }
+    if(isset($login_chack)){
         header("location:dashboard.php");
     }
 

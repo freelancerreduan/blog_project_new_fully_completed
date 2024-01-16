@@ -31,6 +31,14 @@
                 }
             }
         }
+
+
+        // it's function for admin (logout) from Dashboard
+        public function logout(){
+            unset($_SESSION['adminId']);
+            unset($_SESSION['adminEmail']); 
+            header("location:index.php");
+        }
     }
 
 ?>

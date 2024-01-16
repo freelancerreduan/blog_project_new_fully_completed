@@ -1,5 +1,6 @@
 <?php 
    include_once('class/function.php');
+   $obj = new blog_project();
 
     // this is code for ( admin login info chack) if admin info not valid! then go to Redirect( Login page );
    session_start();
@@ -8,6 +9,13 @@
     header("location:index.php");
    }
    
+
+    // this is code for (Admin Logout ) info check and go to Login page
+   if(isset($_GET['adminlogout'])){
+       if($_GET['adminlogout']=='logout'){
+           $obj->logout();
+       }
+   }
 ?>
 
 
