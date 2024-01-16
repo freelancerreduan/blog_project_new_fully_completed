@@ -34,8 +34,15 @@
                          if(isset($view)){
                             if($view=="dashboard"){
                                 include('view/dashboard_view.php');
-                            }elseif($view=="add_cat"){
+                            }
+                            elseif($view=="add_cat"){
                                 include('view/add_cat_view.php');
+                            }
+                            elseif($view=="manage_category"){
+                                include('view/manage_cat_view.php');
+                            }
+                            elseif($view=="cat_edit"){
+                                include('view/cat_edit_view.php');
                             }
                         }
                         ?>

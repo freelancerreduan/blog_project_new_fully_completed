@@ -1,4 +1,4 @@
 <?php
-    $view= "manage_category";
+    $view= "cat_edit";
     include_once('template.php');
 ?>
